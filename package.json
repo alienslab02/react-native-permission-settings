@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Check if notifications are enabled from app settings",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alienslab02/react-native-permissions-settings.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
