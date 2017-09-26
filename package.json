@@ -1,5 +1,5 @@
 {
-  "name": "react-native-permissions-settings",
+  "name": "react-native-permission-settings",
   "version": "1.0.0",
   "description": "Check if notifications are enabled from app settings",
   "main": "index.js",
