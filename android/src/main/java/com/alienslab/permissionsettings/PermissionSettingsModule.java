@@ -1,9 +1,9 @@
 package com.alienslab.permissionsettings;
 
-import android.support.v4.app.NotificationManagerCompat;
-
+import com.facebook.react.bridge.Callback;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
+import com.facebook.react.bridge.ReactMethod;
 
 /**
  * Created by applepc on 26/09/2017.
@@ -17,10 +17,13 @@ public class PermissionSettingsModule extends ReactContextBaseJavaModule {
 
     @Override
     public String getName() {
-        return getCurrentActivity().getString(R.string.app_name);
+        return "PermissionSettings";
     }
 
-    public boolean areNotificationsEnabled() {
-        return NotificationManagerCompat.from(getCurrentActivity()).areNotificationsEnabled();
+    @ReactMethod
+    public void areNotificationsEnabled(Callback cb) {
+        boolean isEnabled = new NotificationsUtils().isNotificationEnabled(getCurrentActivity());
+        cb.invoke(isEnabled);
     }
+
 }

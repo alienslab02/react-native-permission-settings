@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/alienslab02/react-native-permissions-settings.git"
+    "url": "https://github.com/alienslab02/react-native-permission-settings.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
